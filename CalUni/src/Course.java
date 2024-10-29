@@ -18,5 +18,16 @@ public class Course {
         this.students = new ArrayList<>();
         this.grades = new HashMap<>();
     }
-
+    public void addStudent(Student student){
+        students.add(student);
+    }
+    public void setGradeForStudent(Student student, Grade grade){
+        grades.put(student, grade);
+    }
+    public void getGradeForStudent(Student student){
+        return grades.get(student);
+    }
+    public void getCourseName(){
+        return courseName;
+    }
 }
